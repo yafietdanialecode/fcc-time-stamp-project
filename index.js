@@ -107,5 +107,5 @@ app.get("/", function (req, res) {
 
 // listen for requests :)
 app.listen(port, function () {
-  console.log('Your app is listening on port ' + process.env.port);
+  console.log('Your app is listening on port ' + port);
 });
