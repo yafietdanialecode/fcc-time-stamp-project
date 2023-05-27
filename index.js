@@ -4,7 +4,7 @@
 // init project
 var express = require('express');
 var app = express();
-require("dotenv").config()
+var port = 3000
 
 
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
@@ -106,6 +106,6 @@ app.get("/", function (req, res) {
 
 
 // listen for requests :)
-app.listen(process.env.PORT, function () {
-  console.log('Your app is listening on port ' + process.env.PORT);
+app.listen(port, function () {
+  console.log('Your app is listening on port ' + process.env.port);
 });
